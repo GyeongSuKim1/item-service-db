@@ -20,7 +20,8 @@ import javax.sql.DataSource;
 //@Import(MyBatisConfig.class)
 //@Import(JpaConfig.class)
 //@Import(SpringDataJpaConfig.class)
-@Import(QuerydslConfig.class)
+//@Import(QuerydslConfig.class)
+@Import(V2Config.class)
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 @Slf4j
 public class ItemServiceApplication {
@@ -38,7 +39,7 @@ public class ItemServiceApplication {
 	/*
 	@Bean
 	@Profile("test")
-	public DataSource dataSource() {
+	public DataSource d1ataSource() {
 		log.info("메모리 데이터베이스 초기화");
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.h2.Driver");
