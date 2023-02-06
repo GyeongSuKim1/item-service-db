@@ -16,6 +16,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest
 public class TxApplyBasicTest {
 
+    /**
+     * 트랜잭션 적용 확인
+     * @Transactional 을 통해 선언적 트랜잭션 방식을 사용하면 단순히 애노테이션 하나로 트랜잭션을 적용할 수 있다.
+     * 실행 결과를 보면
+     * 트랜잭션을 적용한 tx만 true
+     * nonTx는 false인것을 확인 할 수 있다.
+     */
+
     @Autowired
     BasicService basicService;
 
